@@ -1,0 +1,2 @@
+Hardware Glass desktop monitor package is not included in the public website package because the executable bundle is large.
+A demo package can be shared separately during interview or private communication.
