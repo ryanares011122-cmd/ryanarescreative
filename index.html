@@ -1,175 +1,154 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ruitong Liu | AIGC Creative Production Portfolio</title>
-  <meta name="description" content="Ruitong Liu's AIGC Creative Production Portfolio: AI video, campaign visuals, workflow prototypes, desktop pets, and creative production workflows." />
-  <style>
-    :root{
-      --bg:#f7f9ff; --panel:#ffffff; --text:#0f172a; --muted:#64748b; --line:#dbe4f0;
-      --blue:#2563eb; --violet:#7c3aed; --cyan:#06b6d4; --green:#10b981; --dark:#020617;
-      --shadow:0 24px 70px rgba(15,23,42,.10); --shadow2:0 12px 38px rgba(37,99,235,.14);
-      --radius:28px; --max:1180px;
-    }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",Arial,sans-serif;background:radial-gradient(circle at 10% 5%,#eaf1ff 0,transparent 32%),radial-gradient(circle at 85% 12%,#efe7ff 0,transparent 34%),var(--bg);color:var(--text);}
-    a{color:inherit;text-decoration:none} img,video{max-width:100%;display:block}.wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}.nav{position:sticky;top:0;z-index:50;background:rgba(248,250,252,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(219,228,240,.72)}.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:12px;align-items:center;font-weight:800}.logo{width:38px;height:38px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--violet));display:grid;place-items:center;color:white;box-shadow:var(--shadow2)}.links{display:flex;gap:24px;font-size:14px;color:#475569;align-items:center}.links a:hover{color:var(--blue)}.lang{border:1px solid var(--line);background:#fff;color:var(--blue);font-weight:800;border-radius:999px;padding:9px 14px;cursor:pointer;box-shadow:0 8px 22px rgba(15,23,42,.04)}
-    .hero{padding:88px 0 92px}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:13px}.dot{width:10px;height:10px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 5px rgba(37,99,235,.12)}h1{font-size:clamp(42px,6vw,82px);line-height:.96;margin:18px 0 16px;letter-spacing:-.065em}.grad{background:linear-gradient(110deg,var(--blue),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}.subtitle{font-size:20px;color:#334155;line-height:1.55;margin:0 0 18px}.lead{font-size:16px;line-height:1.85;color:#475569;max-width:760px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:999px;font-weight:850;font-size:14px;border:1px solid var(--line);background:white;color:#0f172a;box-shadow:0 8px 25px rgba(15,23,42,.06)}.btn.primary{border:0;background:linear-gradient(135deg,var(--blue),var(--violet));color:white}.btn.dark{border:0;background:var(--dark);color:white}.btn:hover{transform:translateY(-1px)}.profile-card{background:rgba(255,255,255,.7);border:1px solid rgba(219,228,240,.95);border-radius:34px;padding:18px;box-shadow:var(--shadow)}.portrait{border-radius:26px;aspect-ratio:4/5;object-fit:cover;width:100%}.mini-card{background:white;border:1px solid var(--line);border-radius:22px;padding:18px;margin-top:16px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.stat{border:1px solid #dbeafe;border-radius:16px;padding:14px;background:#f8fbff}.stat b{font-size:22px;display:block}.stat span{font-size:12px;color:var(--muted)}
-    section{padding:76px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.kicker{color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:.09em;font-size:13px}.section-title{font-size:clamp(30px,4vw,48px);line-height:1.05;margin:8px 0 0;letter-spacing:-.04em}.section-desc{max-width:760px;color:#475569;line-height:1.85}.panel{background:rgba(255,255,255,.78);border:1px solid rgba(219,228,240,.9);border-radius:var(--radius);box-shadow:0 16px 50px rgba(15,23,42,.06);padding:26px}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 14px 36px rgba(15,23,42,.05);transition:.2s ease}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card-body{padding:20px}.tagrow{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.tag{font-size:12px;color:#334155;background:#eef4ff;border:1px solid #dbeafe;border-radius:999px;padding:6px 10px;font-weight:700}.tag.green{background:#ecfdf5;border-color:#bbf7d0}.tag.purple{background:#f5f3ff;border-color:#ddd6fe}.tag.dark{background:#f8fafc;border-color:#e2e8f0}.card h3{margin:0;font-size:21px;line-height:1.25}.card p{color:#475569;line-height:1.75;margin:12px 0 0;font-size:14.5px}.cover{aspect-ratio:16/10;object-fit:cover;width:100%;background:#e2e8f0}.cover.portrait{aspect-ratio:3/4;object-position:top}.video-card video{width:100%;aspect-ratio:9/14;object-fit:cover;background:#0f172a}.video-card .video-wide video{aspect-ratio:16/9}.poster-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:16px}.poster-grid img{width:100%;height:100%;object-fit:cover;border-radius:22px;border:1px solid var(--line);box-shadow:0 12px 30px rgba(15,23,42,.06)}.poster-grid .wide{grid-column:span 1;aspect-ratio:16/9}.poster-grid .tall{aspect-ratio:9/16}.tool-img{height:220px;object-fit:cover;background:#f1f5f9}.workflow{display:grid;grid-template-columns:1fr .75fr;gap:22px;align-items:center}.workflow img{border-radius:22px;border:1px solid var(--line)}.timeline{display:grid;gap:12px}.step{display:flex;gap:14px;align-items:flex-start;background:white;border:1px solid var(--line);border-radius:18px;padding:14px}.num{width:32px;height:32px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--violet));color:#fff;display:grid;place-items:center;font-weight:900;flex:0 0 auto}.step b{display:block;margin-bottom:4px}.step span{color:#64748b;font-size:13.5px;line-height:1.55}.downloads{display:flex;flex-wrap:wrap;gap:12px}.notice{font-size:13px;color:#64748b;line-height:1.7;margin-top:16px}.footer{padding:36px 0 48px;color:#64748b;border-top:1px solid var(--line)}
-    .cn [data-en]{display:none}.en [data-cn]{display:none}.mobile-only{display:none}
-    @media (max-width:900px){.links{display:none}.hero-grid,.grid-2,.workflow{grid-template-columns:1fr}.grid-3,.grid-4{grid-template-columns:1fr}.hero{padding:50px 0 56px}.poster-grid{grid-template-columns:1fr 1fr}.poster-grid .wide{grid-column:1/-1}.section-head{display:block}.profile-card{max-width:430px}.mobile-only{display:block}.wrap{width:min(100% - 28px,var(--max))}}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>刘瑞彤｜AIGC 视觉制作与创意工作流</title>
+  <meta name="description" content="刘瑞彤的 AIGC 视觉制作个人作品档案：出海短剧视觉素材、海报 KV、视频片段、本地工具原型、桌宠 Demo 与制作流程记录。">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body class="cn">
   <nav class="nav">
     <div class="wrap nav-inner">
-      <a class="brand" href="#top"><span class="logo">RL</span><span>Ruitong Liu</span></a>
-      <div class="links">
-        <a href="#projects" data-cn>项目</a><a href="#projects" data-en>Projects</a>
-        <a href="#video" data-cn>视频</a><a href="#video" data-en>Video</a>
-        <a href="#visuals" data-cn>视觉资产</a><a href="#visuals" data-en>Visuals</a>
-        <a href="#tools" data-cn>工具</a><a href="#tools" data-en>Tools</a>
-        <a href="#workflow" data-cn>工作流</a><a href="#workflow" data-en>Workflow</a>
-        <a href="#resume" data-cn>简历</a><a href="#resume" data-en>Resume</a>
+      <a class="brand" href="#top" aria-label="Ruitong Liu home"><span class="brand-mark">RL</span><span>Ruitong Liu<small data-cn>作品档案</small><small data-en>Portfolio</small></span></a>
+      <div class="links" aria-label="Primary navigation">
+        <a data-nav href="#work" data-cn>作品</a><a data-nav href="#work" data-en>Work</a>
+        <a data-nav href="#cases" data-cn>案例</a><a data-nav href="#cases" data-en>Cases</a>
+        <a data-nav href="#video" data-cn>视频</a><a data-nav href="#video" data-en>Video</a>
+        <a data-nav href="#visuals" data-cn>海报</a><a data-nav href="#visuals" data-en>Visuals</a>
+        <a data-nav href="#tools" data-cn>原型</a><a data-nav href="#tools" data-en>Prototypes</a>
+        <a data-nav href="#workflow" data-cn>流程</a><a data-nav href="#workflow" data-en>Workflow</a>
+        <a data-nav href="#resume" data-cn>联系</a><a data-nav href="#resume" data-en>Contact</a>
       </div>
-      <button class="lang" id="langBtn">EN</button>
+      <div class="nav-actions"><button class="mobile-toggle" id="menuBtn">Menu</button><button class="lang" id="langBtn">EN</button></div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#work" data-cn>作品</a><a href="#work" data-en>Work</a><a href="#cases" data-cn>案例</a><a href="#cases" data-en>Cases</a><a href="#video" data-cn>视频</a><a href="#video" data-en>Video</a><a href="#visuals" data-cn>海报</a><a href="#visuals" data-en>Visuals</a><a href="#tools" data-cn>原型</a><a href="#tools" data-en>Prototypes</a><a href="#resume" data-cn>联系</a><a href="#resume" data-en>Contact</a>
+      </div>
     </div>
   </nav>
 
   <main id="top">
     <section class="hero">
       <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow"><span class="dot"></span><span data-cn>AIGC 内容生产个人站</span><span data-en>AIGC Creative Production Portfolio</span></div>
-          <h1><span data-cn>刘瑞彤</span><span data-en>Ruitong Liu</span><br><span class="grad">AIGC Creative<br>Production Specialist</span></h1>
-          <p class="subtitle" data-cn>AI 视觉内容生产｜出海增长素材｜创意工作流｜3D AI Demo｜AI 工具原型</p>
-          <p class="subtitle" data-en>AI Visual Content Production · Global Creative Assets · Workflow Design · 3D AI Demo · AI Tool Prototypes</p>
-          <p class="lead" data-cn>我专注于 AIGC 内容生产与 AI 创意工作流落地，参与出海短剧、海报 KV、视频素材、AI 平台 Demo、桌宠和内容工具原型制作，擅长将创意需求拆解为可执行、可复用、可迭代的 AI 生产流程。</p>
-          <p class="lead" data-en>I focus on AI-assisted creative production, including visual assets, short-form video content, campaign visuals, product demos, desktop pet prototypes, and AIGC workflow tools.</p>
-          <div class="actions">
-            <a class="btn primary" href="#projects" data-cn>查看项目</a><a class="btn primary" href="#projects" data-en>View Projects</a>
-            <a class="btn" href="assets/downloads/resume-cn.pdf" download data-cn>下载中文简历</a><a class="btn" href="assets/downloads/resume-cn.pdf" download data-en>Download CN Resume</a>
-            <a class="btn dark" href="assets/downloads/resume-en.pdf" download>Download English Resume</a>
-          </div>
+        <div class="reveal">
+          <div class="kicker"><span data-cn>个人作品档案</span><span data-en>Selected Portfolio</span></div>
+          <h1><span data-cn>刘瑞彤</span><span data-en>Ruitong Liu</span><span class="hero-title-sub" data-cn>AIGC 视觉制作与创意工作流</span><span class="hero-title-sub" data-en>AIGC Visual Production & Creative Workflow</span></h1>
+          <p class="hero-copy" data-cn>这里整理了一组近期参与和完成的 AIGC 内容项目：出海短剧视觉素材、海报 KV、视频片段、本地工具原型，以及正在推进的 3D 桌宠工作流实验。</p>
+          <p class="hero-copy" data-en>A selected archive of recent AIGC content work: global short-drama visuals, campaign posters, video clips, local tool prototypes, and an ongoing 3D desktop pet workflow experiment.</p>
+          <p class="microline" data-cn>AIGC Visual Production · Short Drama Assets · Campaign Visuals · Workflow Notes</p>
+          <p class="microline" data-en>Visual assets · Video materials · Campaign visuals · Lightweight prototypes</p>
+          <div class="cta"><a class="btn primary" href="#work" data-cn>查看作品</a><a class="btn primary" href="#work" data-en>View Work</a><a class="btn" href="assets/downloads/resume-cn.pdf" download data-cn>下载简历</a><a class="btn" href="assets/downloads/resume-en.pdf" download data-en>Download CV</a><a class="btn ghost" href="mailto:m13126880852@163.com" data-cn>联系我</a><a class="btn ghost" href="mailto:m13126880852@163.com" data-en>Contact</a></div>
         </div>
-        <aside class="profile-card">
-          <img class="portrait" src="assets/images/profile/portrait.webp" alt="Ruitong Liu portrait">
-          <div class="mini-card">
-            <h3 style="margin:0"><span data-cn>刘瑞彤</span><span data-en>Ruitong Liu</span></h3>
-            <p style="margin:6px 0 0;color:#64748b;font-size:13px">AIGC Creative Production · Beijing</p>
-            <div class="stats">
-              <div class="stat"><b>1500s+</b><span data-cn>视频素材</span><span data-en>Video assets</span></div>
-              <div class="stat"><b>60+</b><span data-cn>AIGC 资产</span><span data-en>AIGC assets</span></div>
-              <div class="stat"><b>20+</b><span data-cn>核心场景</span><span data-en>Core scenes</span></div>
-              <div class="stat"><b>CET-6</b><span data-cn>英文内容处理</span><span data-en>English content</span></div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="wrap grid-2">
-        <div>
-          <div class="kicker">About</div>
-          <h2 class="section-title" data-cn>关于我</h2><h2 class="section-title" data-en>About Me</h2>
-        </div>
-        <div class="panel">
-          <p data-cn>我拥有广告学背景和真实商业 AIGC 内容生产经验，当前主要参与出海短剧、AI 视觉资产、海报 KV、宣发封面、视频素材、AI 平台测试与 Demo 制作等工作。</p>
-          <p data-cn>我的优势不是单纯使用 AI 工具生成画面，而是将创意目标拆解为可执行的生产流程：从 brief 理解、视觉拆解、提示词设计、素材生成、版本迭代、质量检查到最终交付，形成可复用的工作流和内容资产。</p>
-          <p data-en>I have a background in advertising and hands-on experience in commercial AIGC content production, including global short-form drama assets, posters, campaign visuals, video materials, AI platform testing, and demo production.</p>
-          <p data-en>My strength is not only using AI tools, but also breaking creative goals into repeatable workflows: from brief understanding, visual planning, prompt design, asset generation, iteration, quality control, to final delivery.</p>
+        <div class="hero-board reveal" aria-label="作品拼贴板">
+          <div class="board-note" data-cn>真实项目截图 / Demo / 视觉资产</div><div class="board-note" data-en>Project frames / demos / visuals</div>
+          <div class="pin-card pin-1 float"><img src="assets/images/posters/bloodbound-fire-wide.webp" alt="血色契约横版海报"><span class="label" data-cn>《血色契约》海报视觉</span><span class="label" data-en>Bloodbound visual</span></div>
+          <div class="pin-card pin-2 float"><img src="assets/images/posters/bloodbound-moon-vertical.webp" alt="血色契约竖版封面"><span class="label" data-cn>竖版封面适配</span><span class="label" data-en>Vertical cover</span></div>
+          <div class="pin-card pin-3 float"><img src="assets/images/video-blood10-cover.jpg" alt="血色契约视频帧"><span class="label" data-cn>视频素材帧</span><span class="label" data-en>Video frame</span></div>
+          <div class="pin-card pin-4 float"><img src="assets/images/tools/local-image-deduper.webp" alt="本地图片查重工具"><span class="label" data-cn>本地图片查重工具</span><span class="label" data-en>Local image tool</span></div>
+          <div class="pin-card pin-5 float"><img src="assets/images/pets/desktop-pet-showcase.webp" alt="桌宠展示图"><span class="label" data-cn>桌宠互动 Demo</span><span class="label" data-en>Desktop pet demos</span></div>
+          <div class="pin-card pin-6 float"><img src="assets/images/tools/hardware-glass.webp" alt="桌面监控组件"><span class="label" data-cn>桌面监控组件</span><span class="label" data-en>Hardware widget</span></div>
         </div>
       </div>
     </section>
 
-    <section id="projects">
+    <section id="work">
       <div class="wrap">
-        <div class="section-head">
-          <div><div class="kicker">Featured Projects</div><h2 class="section-title" data-cn>精选项目</h2><h2 class="section-title" data-en>Featured Projects</h2></div>
-          <p class="section-desc" data-cn>首页只展示核心项目入口：视频内容、剧集视觉、桌宠与工具原型。每个项目后续可以继续扩展成详情页。</p>
-          <p class="section-desc" data-en>Key project entries covering AI video production, campaign visuals, desktop pet prototypes, and workflow tools.</p>
+        <div class="section-head reveal"><div><div class="kicker">Selected Work</div><h2 class="section-title" data-cn>精选作品入口</h2><h2 class="section-title" data-en>Selected Work</h2></div><p class="section-desc" data-cn>首页只保留五个主要入口：商业项目在前，个人实验在后。每个入口对应一种可迁移能力，而不是单纯把素材堆在一起。</p><p class="section-desc" data-en>Five entry points: commercial work first, personal experiments later. Each item points to a transferable production capability.</p></div>
+        <div class="work-grid">
+          <a class="card work-card reveal" href="#cases"><span class="work-no">01</span><h3 data-cn>出海短剧视觉制作</h3><h3 data-en>Short Drama Visuals</h3><p data-cn>剧本、分镜、角色、场景与镜头素材的视觉拆解和交付整理。</p><p data-en>Visual breakdown and delivery of characters, scenes, props, and shots.</p></a>
+          <a class="card work-card reveal" href="#bloodbound"><span class="work-no">02</span><h3 data-cn>《血色契约》视觉资产</h3><h3 data-en>Bloodbound Vengeance</h3><p data-cn>哥特吸血鬼题材的海报、封面和视频素材，横竖版完整展示。</p><p data-en>Posters, covers, and video assets for a gothic vampire drama.</p></a>
+          <a class="card work-card reveal" href="#video"><span class="work-no">03</span><h3 data-cn>视频素材与成片片段</h3><h3 data-en>Video Clips</h3><p data-cn>独立剧集片段、素材预览和镜头整理，保留两排六个展示位。</p><p data-en>Episode clips, video previews, and shot-material organization.</p></a>
+          <a class="card work-card reveal" href="#pets"><span class="work-no">04</span><h3 data-cn>桌宠和互动 Demo</h3><h3 data-en>Desktop Pet Demos</h3><p data-cn>角色精灵图、动作配置和本地 EXE 的轻量互动验证。</p><p data-en>Sprite-based character demos with local EXE interaction tests.</p></a>
+          <a class="card work-card reveal" href="#tools"><span class="work-no">05</span><h3 data-cn>本地工具原型</h3><h3 data-en>Local Tool Prototypes</h3><p data-cn>面向素材整理、运行监控和创作效率的本地小工具。</p><p data-en>Local utilities for asset sorting, desktop monitoring, and workflow support.</p></a>
         </div>
-        <div class="grid-4">
-          <article class="card"><img class="cover" src="assets/images/posters/bloodbound-fire-wide.webp" alt="Bloodbound poster"><div class="card-body"><h3>Bloodbound Vengeance</h3><div class="tagrow"><span class="tag purple">Poster / KV</span><span class="tag">AIGC</span></div><p data-cn>魔幻复仇吸血鬼题材短剧的海报 KV、宣发封面与视频素材案例。</p><p data-en>A gothic vampire revenge case covering posters, campaign visuals, and video assets.</p></div></article>
-          <article class="card"><img class="cover" src="assets/images/desk-to-throne-preview.jpg" alt="Video project cover"><div class="card-body"><h3 data-cn>从课桌到王座</h3><h3 data-en>From Desk to Throne</h3><div class="tagrow"><span class="tag">AI Video</span><span class="tag green">Delivery</span></div><p data-cn>独立短剧剧集素材片段，展示成片剪辑、海报替换和视频交付能力。</p><p data-en>A short drama episode clip showing editing, campaign visual integration, and delivery.</p></div></article>
-          <article class="card"><img class="cover" src="assets/images/tools/local-image-deduper.webp" alt="Local image deduper"><div class="card-body"><h3>Local Image Deduper</h3><div class="tagrow"><span class="tag">Tool</span><span class="tag green">Workflow</span></div><p data-cn>面向 AIGC 素材生产的本地图片查重工具原型。</p><p data-en>A local image deduplication prototype for AIGC asset workflows.</p></div></article>
-          <article class="card"><img class="cover" src="assets/images/pets/sapphire-siamese.webp" alt="Desktop pet"><div class="card-body"><h3>Desktop Pet Prototypes</h3><div class="tagrow"><span class="tag purple">EXE Demo</span><span class="tag">Interaction</span></div><p data-cn>方块小猪与暹罗猫桌宠原型，验证角色素材到本地互动 Demo 的链路。</p><p data-en>Blocky pig and Siamese cat desktop pet prototypes for local interactive demos.</p></div></article>
+      </div>
+    </section>
+
+    <section id="capabilities">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">Production Notes</div><h2 class="section-title" data-cn>能力不是工具清单</h2><h2 class="section-title" data-en>Beyond a Tool List</h2></div><p class="section-desc" data-cn>这部分不放“技能百分比条”。更重要的是：能把需求拆成素材、把素材整理成可用版本、把重复问题沉淀成流程或小工具。</p><p class="section-desc" data-en>No skill bars here. The focus is turning requirements into assets, assets into usable versions, and repeated problems into workflow notes or small tools.</p></div>
+        <div class="cap-grid">
+          <div class="card cap-card reveal"><div class="icon">C</div><h3 data-cn>创意生产</h3><h3 data-en>Creative Production</h3><div class="cap-list"><span data-cn>剧本 / brief 到视觉素材拆解</span><span data-en>Brief-to-visual breakdown</span><span data-cn>AIGC 镜头提示词与参考图锚定</span><span data-en>AIGC shot prompt and reference anchoring</span><span data-cn>海报 KV、封面与视频素材适配</span><span data-en>Poster, cover, and video asset adaptation</span></div></div>
+          <div class="card cap-card reveal"><div class="icon">Q</div><h3 data-cn>工作流与质检</h3><h3 data-en>Workflow & QA</h3><div class="cap-list"><span data-cn>角色、场景、道具的一致性检查</span><span data-en>Consistency check for characters, scenes, and props</span><span data-cn>素材版本、返修记录与交付归档</span><span data-en>Version tracking, iteration notes, and delivery archive</span><span data-cn>把高频问题整理成可复用规则</span><span data-en>Turning repeated issues into reusable rules</span></div></div>
+          <div class="card cap-card reveal"><div class="icon">P</div><h3 data-cn>原型思维</h3><h3 data-en>Prototype Thinking</h3><div class="cap-list"><span data-cn>本地图片查重与素材清理工具</span><span data-en>Local image dedupe and sorting tool</span><span data-cn>桌面监控组件与桌宠 Demo</span><span data-en>Desktop widget and pet demos</span><span data-cn>Meshy 到桌面互动 Demo 的工作流实验</span><span data-en>Meshy-to-desktop interaction workflow experiment</span></div></div>
         </div>
+      </div>
+    </section>
+
+    <section id="cases">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="kicker">Case Studies</div><h2 class="section-title" data-cn>案例档案</h2><h2 class="section-title" data-en>Case Notes</h2></div><p class="section-desc" data-cn>案例部分不写成长篇自我介绍，只保留项目背景、视觉重点和可展示产出。商业项目以安全预览和作品说明为主。</p><p class="section-desc" data-en>Case notes focus on project context, visual focus, and safe previews instead of long self-introductions.</p></div>
+        <article class="card case-block reveal" id="bloodbound">
+          <div class="case-text"><div class="kicker">Bloodbound Vengeance</div><h3 data-cn>《血色契约》海报与视频素材</h3><h3 data-en>Bloodbound Vengeance Visual Assets</h3><p data-cn>哥特吸血鬼题材短剧视觉资产，包含横版主视觉、竖版封面和视频素材。画面围绕暗夜、复仇、亲密关系和城堡空间展开，重点处理人物关系、标题安全区、横竖版适配和统一氛围。</p><p data-en>Visual assets for a gothic vampire short drama, including horizontal key visuals, vertical covers, and video materials. The work focuses on mood, character tension, title-safe layout, and format adaptation.</p><div class="note-list"><div class="note" data-cn>重点：同一题材下的多比例视觉适配，横版主视觉和竖版封面完整展示。</div><div class="note" data-en>Focus: format adaptation across horizontal key visuals and vertical covers.</div><div class="note" data-cn>产出：海报 KV、宣发封面、视频素材预览。</div><div class="note" data-en>Outputs: posters, campaign covers, and video previews.</div></div></div>
+          <div class="case-visual"><div class="poster-frame wide poster-open" data-full="assets/images/posters/bloodbound-fire-wide.webp"><img src="assets/images/posters/bloodbound-fire-wide.webp" alt="血色契约火焰横版海报"></div><div class="poster-frame tall poster-open" data-full="assets/images/posters/bloodbound-fire-vertical.webp"><img src="assets/images/posters/bloodbound-fire-vertical.webp" alt="血色契约火焰竖版海报"></div></div>
+        </article>
       </div>
     </section>
 
     <section id="video">
       <div class="wrap">
-        <div class="section-head"><div><div class="kicker">AIGC Video Production</div><h2 class="section-title" data-cn>AI 视频内容生产</h2><h2 class="section-title" data-en>AI Video Production</h2></div><p class="section-desc" data-cn>以下为压缩预览片段，用于展示 AIGC 视频生成、粗剪、返修、节奏整合和成片交付能力。完整项目可按面试需要进一步展示。</p><p class="section-desc" data-en>Compressed preview clips showing AI video generation, editing, shot refinement, pacing, and delivery.</p></div>
-        <div class="grid-4">
-          <article class="card video-card"><video src="assets/videos/desk-to-throne-preview.mp4" controls muted playsinline poster="assets/images/desk-to-throne-preview.jpg"></video><div class="card-body"><h3 data-cn>《从课桌到王座》片段</h3><h3 data-en>From Desk to Throne Clip</h3><p data-cn>剧集成片片段，展示 AI 视频素材整合、短剧节奏与结尾海报替换。</p><p data-en>Episode preview showing AI video asset integration, pacing, and ending poster replacement.</p></div></article>
-          <article class="card video-card"><video src="assets/videos/night-prison-17-preview.mp4" controls muted playsinline poster="assets/images/night-prison-17-preview.jpg"></video><div class="card-body"><h3 data-cn>《夜囚她影》素材 01</h3><h3 data-en>Night Prison Her Shadow 01</h3><p data-cn>都市言情 / 悬疑氛围类视频素材，关注人物情绪与场景氛围。</p><p data-en>Romance-suspense visual asset focusing on character emotion and atmosphere.</p></div></article>
-          <article class="card video-card"><video src="assets/videos/night-prison-21-preview.mp4" controls muted playsinline poster="assets/images/night-prison-21-preview.jpg"></video><div class="card-body"><h3 data-cn>《夜囚她影》素材 02</h3><h3 data-en>Night Prison Her Shadow 02</h3><p data-cn>补充视频片段，用于展示镜头资产、画面质感和短剧制作链路。</p><p data-en>Additional preview for shot assets, visual quality, and short drama production workflow.</p></div></article>
-          <article class="card video-card"><video src="assets/videos/bloodbound-ep10-preview.mp4" controls muted playsinline poster="assets/images/bloodbound-ep10-preview.jpg"></video><div class="card-body"><h3>Bloodbound Vengeance EP10</h3><p data-cn>替换原失败 EP1 的可用片段，展示哥特复仇题材的 AI 视频生成、镜头整合与短剧交付。</p><p data-en>Usable replacement for the failed EP1 preview, showing gothic revenge AI video generation, shot integration, and short drama delivery.</p></div></article>
-          <article class="card video-card"><video src="assets/videos/bloodbound-ep19-preview.mp4" controls muted playsinline poster="assets/images/bloodbound-ep19-preview.jpg"></video><div class="card-body"><h3>Bloodbound Vengeance EP19</h3><p data-cn>魔幻复仇题材视频素材片段，与海报 KV 形成完整项目链路。</p><p data-en>Gothic vampire video asset connected with the poster and campaign visual case.</p></div></article>
+        <div class="section-head reveal"><div><div class="kicker">Video Assets & Episode Clips</div><h2 class="section-title" data-cn>视频素材与成片片段</h2><h2 class="section-title" data-en>Video Clips</h2></div><p class="section-desc" data-cn>两排六个视频位。当前放入《从课桌到王座》《夜囚她影》《血色契约》的安全预览，最后一个位置预留给周一补充素材。</p><p class="section-desc" data-en>A two-row grid reserved for six video items. Current previews include Desk to Throne, Night Prison Her Shadow, and Bloodbound Vengeance.</p></div>
+        <div class="video-grid">
+          <article class="card video-card reveal" data-video="assets/videos/desk-to-throne-preview.mp4" data-poster="assets/images/video-desk-cover.jpg"><img class="video-cover" src="assets/images/video-desk-cover.jpg" alt="从课桌到王座视频封面"><span class="play-badge">▶</span><div class="video-meta"><h3 data-cn>《从课桌到王座》成片片段</h3><h3 data-en>Desk to Throne Episode Clip</h3><p data-cn>独立短剧片段，展示视频素材整合、短剧节奏和结尾海报替换后的成片效果。</p><p data-en>Episode clip showing edited pacing, video-material integration, and ending poster replacement.</p></div></article>
+          <article class="card video-card reveal" data-video="assets/videos/night-prison-17-preview.mp4" data-poster="assets/images/video-night17-cover.jpg"><img class="video-cover" src="assets/images/video-night17-cover.jpg" alt="夜囚她影视频素材1"><span class="play-badge">▶</span><div class="video-meta"><h3 data-cn>《夜囚她影》视频素材 01</h3><h3 data-en>Night Prison Her Shadow 01</h3><p data-cn>都市言情类短剧素材片段，重点展示人物情绪、场景氛围和镜头素材整理。</p><p data-en>Short-drama material focusing on character emotion, scene mood, and shot organization.</p></div></article>
+          <article class="card video-card reveal" data-video="assets/videos/night-prison-21-preview.mp4" data-poster="assets/images/video-night21-cover.jpg"><img class="video-cover" src="assets/images/video-night21-cover.jpg" alt="夜囚她影视频素材2"><span class="play-badge">▶</span><div class="video-meta"><h3 data-cn>《夜囚她影》视频素材 02</h3><h3 data-en>Night Prison Her Shadow 02</h3><p data-cn>补充展示同一项目下的不同镜头氛围和短剧素材可用性。</p><p data-en>Additional preview showing different shot mood and production usability.</p></div></article>
+          <article class="card video-card reveal" data-video="assets/videos/bloodbound-ep10-preview.mp4" data-poster="assets/images/video-blood10-cover.jpg"><img class="video-cover" src="assets/images/video-blood10-cover.jpg" alt="血色契约EP10"><span class="play-badge">▶</span><div class="video-meta"><h3 data-cn>《血色契约》EP10</h3><h3 data-en>Bloodbound Vengeance EP10</h3><p data-cn>哥特吸血鬼题材视频片段，包含暗色场景、动作镜头和奇幻氛围素材。</p><p data-en>Gothic vampire video preview with dark scenes, action shots, and fantasy mood.</p></div></article>
+          <article class="card video-card reveal" data-video="assets/videos/bloodbound-ep19-preview.mp4" data-poster="assets/images/video-blood19-cover.jpg"><img class="video-cover" src="assets/images/video-blood19-cover.jpg" alt="血色契约EP19"><span class="play-badge">▶</span><div class="video-meta"><h3 data-cn>《血色契约》EP19</h3><h3 data-en>Bloodbound Vengeance EP19</h3><p data-cn>同一项目下的另一组视频素材，用于展示题材氛围和镜头风格延续。</p><p data-en>Another preview from the same project, showing continuity in genre mood and shot style.</p></div></article>
+          <article class="card video-card reveal"><div class="placeholder"><span data-cn>预留：周一补充视频</span><span data-en>Reserved for next video</span></div><div class="video-meta"><h3 data-cn>更多视频素材</h3><h3 data-en>More Video Materials</h3><p data-cn>后续补充公司电脑中的安全展示片段，保持两排六个视频位。</p><p data-en>Reserved for safe preview clips to be added later.</p></div></article>
         </div>
-        <p class="notice" data-cn>注：网页仅展示安全压缩预览，不公开完整公司内部项目、源文件或敏感素材。</p><p class="notice" data-en>Note: Only safe compressed previews are shown here. Full internal materials and source files are not publicly shared.</p>
       </div>
     </section>
 
     <section id="visuals">
       <div class="wrap">
-        <div class="section-head"><div><div class="kicker">Poster & Visual Creative Assets</div><h2 class="section-title" data-cn>海报 KV 与视觉资产</h2><h2 class="section-title" data-en>Poster & Visual Assets</h2></div><p class="section-desc" data-cn>《Bloodbound Vengeance》系列展示横版主视觉、竖版封面、移动端宣发图和多版本气氛探索，强调商业宣发适配而非单纯图片展示。</p><p class="section-desc" data-en>Bloodbound Vengeance visual explorations across horizontal key visuals, vertical covers, mobile promotional assets, and atmosphere variations.</p></div>
-        <div class="poster-grid">
-          <img class="wide" src="assets/images/posters/bloodbound-moon-wide.webp" alt="Bloodbound moon wide poster">
-          <img class="tall" src="assets/images/posters/bloodbound-moon-vertical.webp" alt="Bloodbound moon vertical poster">
-          <img class="tall" src="assets/images/posters/bloodbound-fire-vertical.webp" alt="Bloodbound fire vertical poster">
-          <img class="wide" src="assets/images/posters/bloodbound-fire-wide.webp" alt="Bloodbound fire wide poster">
-          <img class="wide" src="assets/images/posters/bloodbound-banner.webp" alt="Bloodbound banner">
-          <img class="tall" src="assets/images/posters/bloodbound-cover.webp" alt="Bloodbound cover">
+        <div class="section-head reveal"><div><div class="kicker">Posters & Campaign Visuals</div><h2 class="section-title" data-cn>海报与宣发视觉</h2><h2 class="section-title" data-en>Posters & Campaign Visuals</h2></div><p class="section-desc" data-cn>海报区以“完整视觉展示”为主，不做裁切图墙。同一系列横版和竖版成组出现，方便直接看出排版、标题区和移动端适配。</p><p class="section-desc" data-en>Poster work is shown as complete visual pairs, not cropped masonry images, so layout and format adaptation remain visible.</p></div>
+        <div class="visual-series">
+          <article class="card series-card reveal"><div class="series-top"><h3 data-cn>月夜亲密关系主视觉</h3><h3 data-en>Moonlit Character Tension</h3><p data-cn>横版主视觉与竖版封面成组展示，重点在人物靠近、暗夜氛围和标题安全区。</p><p data-en>Horizontal and vertical versions focusing on character tension, night mood, and title-safe layout.</p></div><div class="poster-pair"><div class="poster-frame wide poster-open" data-full="assets/images/posters/bloodbound-moon-wide.webp"><img src="assets/images/posters/bloodbound-moon-wide.webp" alt="月夜横版海报"></div><div class="poster-frame tall poster-open" data-full="assets/images/posters/bloodbound-moon-vertical.webp"><img src="assets/images/posters/bloodbound-moon-vertical.webp" alt="月夜竖版海报"></div></div></article>
+          <article class="card series-card reveal"><div class="series-top"><h3 data-cn>火焰城堡复仇主视觉</h3><h3 data-en>Burning Castle Revenge Visual</h3><p data-cn>火焰、城堡和人物站位形成更强的题材辨识度，横竖版保持同一视觉情绪。</p><p data-en>Fire, castle space, and character placement create a stronger genre identity across formats.</p></div><div class="poster-pair"><div class="poster-frame wide poster-open" data-full="assets/images/posters/bloodbound-fire-wide.webp"><img src="assets/images/posters/bloodbound-fire-wide.webp" alt="火焰横版海报"></div><div class="poster-frame tall poster-open" data-full="assets/images/posters/bloodbound-fire-vertical.webp"><img src="assets/images/posters/bloodbound-fire-vertical.webp" alt="火焰竖版海报"></div></div></article>
+          <article class="card series-card reveal"><div class="series-top"><h3 data-cn>蓝调拱门角色视觉</h3><h3 data-en>Blue Gothic Character Visual</h3><p data-cn>补充展示偏角色海报和横版 banner 的另一组排版样式，用于体现同一项目下的视觉探索。</p><p data-en>Additional character-focused layout exploration, including poster and banner formats.</p></div><div class="poster-pair"><div class="poster-frame wide poster-open" data-full="assets/images/posters/bloodbound-banner.webp"><img src="assets/images/posters/bloodbound-banner.webp" alt="蓝调横版 banner"></div><div class="poster-frame tall poster-open" data-full="assets/images/posters/bloodbound-cover.webp"><img src="assets/images/posters/bloodbound-cover.webp" alt="蓝调竖版封面"></div></div></article>
         </div>
-        <div class="panel" style="margin-top:22px"><p data-cn>制作重点：暗黑哥特题材识别、人物关系张力、标题区规划、横竖版比例适配、宣发封面与视频素材的一致性。</p><p data-en>Production focus: gothic genre identity, character tension, title placement, horizontal/vertical adaptation, and consistency between campaign visuals and video assets.</p></div>
       </div>
     </section>
 
     <section id="tools">
       <div class="wrap">
-        <div class="section-head"><div><div class="kicker">AI Tools & Workflow Prototypes</div><h2 class="section-title" data-cn>AI 工具与工作流原型</h2><h2 class="section-title" data-en>AI Tools & Prototypes</h2></div><p class="section-desc" data-cn>这些项目用于展示“内容生产问题 → 工具需求 → 可运行原型”的转化能力，不包装成工程师作品，而是作为 AI 辅助原型和创作者工作流工具。</p><p class="section-desc" data-en>These projects demonstrate turning content production pain points into lightweight, runnable prototypes and workflow-support tools.</p></div>
-        <div class="grid-3">
-          <article class="card"><img class="cover tool-img" src="assets/images/tools/local-image-deduper.webp" alt="Local Image Deduper"><div class="card-body"><h3>Local Image Deduper</h3><div class="tagrow"><span class="tag">SHA256</span><span class="tag">dHash</span><span class="tag green">CSV</span></div><p data-cn>Windows 本地图片查重 MVP，不上传图片、不修改原图，支持完全重复与视觉相似检测，服务 AIGC 批量素材整理。</p><p data-en>Windows local image deduplication MVP for exact and visual similarity detection in AIGC asset workflows.</p><div class="actions" style="margin-top:14px"><a class="btn" href="assets/downloads/local-image-deduper.zip" download data-cn>下载项目包</a><a class="btn" href="assets/downloads/local-image-deduper.zip" download data-en>Download Package</a></div></div></article>
-          <article class="card"><img class="cover tool-img" src="assets/images/tools/hardware-glass.webp" alt="Hardware Glass"><div class="card-body"><h3>Hardware Glass</h3><div class="tagrow"><span class="tag">Windows</span><span class="tag">Widget</span><span class="tag purple">EXE</span></div><p data-cn>桌面硬件监控悬浮组件，展示 CPU、GPU、RAM 状态，支持置顶、锁定、透明度和鼠标穿透等创作者工作流功能。</p><p data-en>A desktop performance monitor widget showing CPU, GPU, and RAM status with always-on-top, lock, transparency, and mouse-through modes.</p></div></article>
-          <article class="card"><img class="cover tool-img" src="assets/images/pets/blocky-pig.webp" alt="Blocky Pig Desktop Pet"><div class="card-body"><h3>Desktop Pet Prototypes</h3><div class="tagrow"><span class="tag purple">Blocky Pig</span><span class="tag purple">Siamese Cat</span></div><p data-cn>方块小猪与暹罗猫桌宠原型，支持本地 EXE、拖拽互动、动作切换、右键菜单和资源配置扩展。</p><p data-en>Desktop pet prototypes with standalone EXE builds, draggable interaction, action switching, right-click menu, and configurable assets.</p></div></article>
+        <div class="section-head reveal"><div><div class="kicker">Local Tool Prototypes</div><h2 class="section-title" data-cn>本地工具原型</h2><h2 class="section-title" data-en>Local Tool Prototypes</h2></div><p class="section-desc" data-cn>这部分作为“创作者侧原型思维”展示：不是工程师作品集，而是把素材整理、运行监控、互动 Demo 这类具体需求，做成可运行的小工具。</p><p class="section-desc" data-en>This section shows creator-side prototype thinking: small runnable tools for asset sorting, desktop monitoring, and interaction demos.</p></div>
+        <div class="tools-grid">
+          <article class="card reveal"><img class="cover tool-image" src="assets/images/tools/local-image-deduper.webp" alt="本地图片查重工具"><div class="card-body"><h3 data-cn>本地图片查重工具</h3><h3 data-en>Local Image Deduper</h3><p data-cn>面向 AIGC 批量素材整理的 Windows 本地工具原型，支持完全重复图与视觉相似图检测，适用于素材筛选、版本清理和项目归档前的初步整理。</p><p data-en>A local Windows tool for AIGC asset sorting, detecting exact duplicates and visually similar images before archiving.</p><div class="tags"><span class="tag">SHA256</span><span class="tag">dHash</span><span class="tag green">CSV</span></div><div class="tool-actions"><a class="btn" href="assets/downloads/local-image-deduper.zip" download data-cn>下载项目包</a><a class="btn" href="assets/downloads/local-image-deduper.zip" download data-en>Download</a></div></div></article>
+          <article class="card reveal"><img class="cover tool-image" src="assets/images/tools/hardware-glass.webp" alt="Hardware Glass 桌面监控组件"><div class="card-body"><h3>Hardware Glass</h3><p data-cn>一款轻量桌面悬浮组件，用于在剪辑、游戏和 AI 工具运行场景中查看 CPU、GPU 与内存状态。支持置顶、锁定、透明度调节和鼠标穿透等桌面交互。</p><p data-en>A lightweight desktop monitor for CPU, GPU, and RAM status during editing, gaming, or AI tool usage.</p><div class="tags"><span class="tag blue">Windows</span><span class="tag">Widget</span><span class="tag green">EXE</span></div><div class="tool-actions"><a class="btn" href="assets/downloads/hardware-glass-note.txt" download data-cn>下载说明</a><a class="btn" href="assets/downloads/hardware-glass-note.txt" download data-en>Download Note</a></div></div></article>
+          <article class="card reveal" id="pets"><img class="cover tool-image" src="assets/images/pets/desktop-pet-showcase.webp" alt="桌宠和互动 Demo"><div class="card-body"><h3 data-cn>桌宠和互动 Demo</h3><h3 data-en>Desktop Pet Demos</h3><p data-cn>基于角色精灵图和动作配置文件制作的 Windows 桌面宠物原型，支持拖拽、动作切换、随机动作和右键菜单，用于验证轻量互动角色从素材到本地 Demo 的落地方式。</p><p data-en>Windows desktop pet prototypes using sprite sheets and action config files, with drag, action switching, random actions, and right-click menus.</p><div class="tags"><span class="tag">EXE Demo</span><span class="tag green" data-cn>动作配置</span><span class="tag green" data-en>Action Config</span></div><div class="tool-actions"><a class="btn" href="assets/downloads/blocky-pig-desktop-pet.zip" download data-cn>下载小猪</a><a class="btn" href="assets/downloads/blocky-pig-desktop-pet.zip" download data-en>Download Pig</a><a class="btn" href="assets/downloads/siamese-cat-desktop-pet.zip" download data-cn>下载暹罗猫</a><a class="btn" href="assets/downloads/siamese-cat-desktop-pet.zip" download data-en>Download Cat</a></div></div></article>
         </div>
       </div>
     </section>
 
-    <section id="demo">
-      <div class="wrap grid-2">
-        <div><div class="kicker">3D AI Demo</div><h2 class="section-title" data-cn>Meshy 3D 桌宠实验</h2><h2 class="section-title" data-en>Meshy 3D Desktop Pet Experiment</h2><p class="section-desc" data-cn>该个人实验用于验证 AI 3D 资产从生成到互动 Demo 的落地流程：Meshy 生成模型，Blender 进行资产检查，Godot 接入桌面互动应用。当前作为进行中项目展示。</p><p class="section-desc" data-en>This ongoing personal experiment validates the workflow from Meshy-generated 3D assets to Blender inspection and Godot desktop interaction demos.</p></div>
-        <div class="panel"><div class="timeline"><div class="step"><span class="num">1</span><div><b>Meshy</b><span data-cn>生成拟真猫咪 3D 模型，整理 GLB / FBX / Blend 文件。</span><span data-en>Generate realistic cat model assets and organize GLB / FBX / Blend files.</span></div></div><div class="step"><span class="num">2</span><div><b>Blender</b><span data-cn>检查材质、贴图、模型比例、面数和导出兼容性。</span><span data-en>Inspect materials, textures, scale, polygon count, and export compatibility.</span></div></div><div class="step"><span class="num">3</span><div><b>Godot</b><span data-cn>推进桌面互动、拖拽、置顶、动画和 EXE 封装。</span><span data-en>Build desktop interaction, drag behavior, always-on-top mode, animation, and EXE packaging.</span></div></div></div></div>
+    <section id="meshy">
+      <div class="wrap pet-showcase">
+        <div class="reveal"><div class="kicker">Meshy 3D Workflow</div><h2 class="section-title" data-cn>Meshy 3D 桌宠实验</h2><h2 class="section-title" data-en>Meshy 3D Desktop Pet Experiment</h2><p class="section-desc" data-cn>面向 AI 3D 资产落地的个人实验项目，尝试将 Meshy 生成的 3D 模型经过文件整理、Blender 检查和 Godot 接入，推进到可互动桌面 Demo 的工作流验证。</p><p class="section-desc" data-en>A personal experiment for moving Meshy-generated 3D assets through file organization, Blender inspection, and Godot integration toward an interactive desktop demo.</p><div class="tags"><span class="tag blue">Meshy</span><span class="tag">Blender</span><span class="tag">Godot</span><span class="tag green" data-cn>进行中</span><span class="tag green" data-en>In Progress</span></div></div>
+        <div class="card reveal"><div class="card-body"><h3 data-cn>当前记录方式</h3><h3 data-en>Current Record</h3><p data-cn>这里先保留工作流位置。周一补充 Meshy 模型截图、Blender 检查截图、Godot 接入截图后，会替换成完整案例板。</p><p data-en>This space is reserved for Meshy model screenshots, Blender inspection, and Godot integration screens to be added later.</p><div class="steps" style="margin-top:18px"><div class="step"><span class="num">1</span><div><b>Meshy</b><span data-cn>模型生成与文件整理</span><span data-en>Model generation and file organization</span></div></div><div class="step"><span class="num">2</span><div><b>Blender</b><span data-cn>材质、贴图、比例和导出检查</span><span data-en>Material, texture, scale, and export checks</span></div></div><div class="step"><span class="num">3</span><div><b>Godot</b><span data-cn>桌面互动 Demo 接入</span><span data-en>Desktop interaction demo integration</span></div></div></div></div></div>
       </div>
     </section>
 
     <section id="workflow">
-      <div class="wrap workflow">
-        <div><div class="kicker">Workflow & SOP</div><h2 class="section-title" data-cn>AIGC 创意生产工作流</h2><h2 class="section-title" data-en>AIGC Creative Production Workflow</h2><p class="section-desc" data-cn>我关注的不只是单张图或单条视频的生成效果，而是如何将创意需求转化为稳定、可复用、可协作的生产流程。</p><p class="section-desc" data-en>My focus is not only generating one good image or video, but turning creative requirements into stable, reusable, and collaborative production workflows.</p><div class="downloads"><span class="tag">Prompt Template</span><span class="tag">Visual Consistency</span><span class="tag">Version Control</span><span class="tag">QC Checklist</span><span class="tag">Delivery Standard</span></div></div>
-        <img src="assets/images/workflow/aigc-workflow.webp" alt="AIGC workflow diagram">
+      <div class="wrap workflow-grid">
+        <div class="reveal"><div class="kicker">How I Work</div><h2 class="section-title" data-cn>制作流程</h2><h2 class="section-title" data-en>How I Work</h2><p class="section-desc" data-cn>这不是单张图或单条视频的展示。更重要的是把需求拆成能生成、能返修、能归档、能交付的步骤。</p><p class="section-desc" data-en>This is not just about one image or one video. The focus is turning requirements into steps that can be generated, refined, archived, and delivered.</p><div class="tags"><span class="tag">Brief</span><span class="tag">Prompt</span><span class="tag">QC</span><span class="tag">Version</span><span class="tag">Delivery</span></div></div>
+        <div class="steps reveal"><div class="step"><span class="num">1</span><div><b data-cn>需求与画面拆解</b><b data-en>Brief Breakdown</b><span data-cn>先确认剧情、角色、场景、道具和交付比例。</span><span data-en>Clarify story, characters, scenes, props, and output formats.</span></div></div><div class="step"><span class="num">2</span><div><b data-cn>素材生成与版本整理</b><b data-en>Asset Generation</b><span data-cn>通过提示词、参考图和返修记录控制素材可用性。</span><span data-en>Use prompts, references, and iteration notes to keep assets usable.</span></div></div><div class="step"><span class="num">3</span><div><b data-cn>镜头返修与质量检查</b><b data-en>Shot Refinement</b><span data-cn>关注脸、动作、站位、光影、台词归属和正反打连续性。</span><span data-en>Check faces, actions, positions, lighting, dialogue alignment, and continuity.</span></div></div><div class="step"><span class="num">4</span><div><b data-cn>归档与后续复用</b><b data-en>Archive & Reuse</b><span data-cn>把资产、视频、海报和项目说明整理成后续可复用的档案。</span><span data-en>Archive assets, videos, posters, and notes for future reuse.</span></div></div></div>
+      </div>
+    </section>
+
+    <section id="ip">
+      <div class="wrap ip-panel">
+        <div class="reveal"><div class="kicker">Other IP & Product Visuals</div><h2 class="section-title" data-cn>其他 IP 与产品视觉</h2><h2 class="section-title" data-en>Other IP & Product Visuals</h2><p class="section-desc" data-cn>给熊猫 IP、透明底角色图、产品图和后续补充素材预留的位置。这里作为视觉延展展示，不抢主案例位置。</p><p class="section-desc" data-en>A reserved section for Panda IP, transparent character assets, product visuals, and later updates.</p></div>
+        <div class="ip-placeholder reveal"><div><strong data-cn>周一补充素材后更新</strong><strong data-en>To be updated with more assets</strong><p data-cn>建议放 4–8 张最完整、最能代表审美的 IP / 产品图。</p><p data-en>Recommended: 4–8 complete IP or product visuals with strong presentation value.</p></div></div>
       </div>
     </section>
 
     <section id="resume">
-      <div class="wrap panel">
-        <div class="section-head"><div><div class="kicker">Resume & Contact</div><h2 class="section-title" data-cn>简历与联系</h2><h2 class="section-title" data-en>Resume & Contact</h2></div></div>
-        <div class="downloads"><a class="btn primary" href="assets/downloads/resume-cn.pdf" download data-cn>下载中文简历</a><a class="btn primary" href="assets/downloads/resume-cn.pdf" download data-en>Download CN Resume</a><a class="btn dark" href="assets/downloads/resume-en.pdf" download>Download English Resume</a><a class="btn" href="mailto:m13126880852@163.com">m13126880852@163.com</a></div>
-        <p class="notice" data-cn>作品集持续更新中。商业项目仅展示安全预览和流程说明，完整作品或 Demo 可在面试沟通中进一步展示。</p>
-        <p class="notice" data-en>This portfolio is continuously updated. Commercial projects are shown through safe previews and workflow descriptions only. Full demos can be shared during interviews when appropriate.</p>
-      </div>
+      <div class="wrap card resume-panel reveal"><div><h2 data-cn>简历与联系</h2><h2 data-en>Resume & Contact</h2><p data-cn>作品集持续更新中。商业项目仅展示安全预览和流程说明，完整作品或 Demo 可在面试沟通中进一步展示。</p><p data-en>This portfolio is still being updated. Commercial projects are shown through safe previews and workflow notes only.</p><p class="safety-note" data-cn>邮箱：m13126880852@163.com｜北京｜AIGC 视觉制作 / Creative Production 方向</p><p class="safety-note" data-en>Email: m13126880852@163.com · Beijing · AIGC Visual Production / Creative Production</p></div><div class="cta"><a class="btn primary" href="assets/downloads/resume-cn.pdf" download data-cn>下载中文简历</a><a class="btn primary" href="assets/downloads/resume-cn.pdf" download data-en>Download CN Resume</a><a class="btn" href="assets/downloads/resume-en.pdf" download>English Resume</a><a class="btn ghost" href="mailto:m13126880852@163.com" data-cn>发送邮件</a><a class="btn ghost" href="mailto:m13126880852@163.com" data-en>Email</a></div></div>
     </section>
   </main>
 
-  <footer class="footer"><div class="wrap">© 2026 Ruitong Liu · AIGC Creative Production Portfolio · ryanarescreative.com</div></footer>
-
-  <script>
-    const body=document.body; const btn=document.getElementById('langBtn');
-    function setLang(lang){ body.classList.toggle('en',lang==='en'); body.classList.toggle('cn',lang!=='en'); btn.textContent=lang==='en'?'中文':'EN'; document.documentElement.lang=lang==='en'?'en':'zh-CN'; localStorage.setItem('portfolio_lang',lang); }
-    btn.addEventListener('click',()=>setLang(body.classList.contains('en')?'cn':'en'));
-    setLang(localStorage.getItem('portfolio_lang')||'cn');
-  </script>
+  <footer class="footer"><div class="wrap">© 2026 Ruitong Liu · AIGC Visual Production & Creative Workflow · ryanarescreative.com</div></footer>
+  <div class="modal" id="modal" aria-hidden="true"><div class="modal-box"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
