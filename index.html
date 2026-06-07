@@ -3,23 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>刘瑞彤｜AIGC 视觉制作作品档案</title>
-  <meta name="description" content="刘瑞彤的 AIGC 视觉制作作品档案：短剧视频素材、海报与宣发视觉、本地工具原型、桌宠 Demo 与 Meshy 3D 实验。">
+  <title>刘瑞彤｜AIGC 视觉制作作品集</title>
+  <meta name="description" content="刘瑞彤的 AIGC 视觉制作作品集，包含短剧视频素材、海报与宣发视觉、IP 形象和本地工具实验。">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body class="cn">
   <nav class="nav" aria-label="primary">
     <div class="nav-wrap">
-      <a class="brand" href="#top" aria-label="刘瑞彤作品档案">
-        <span class="brand-dot">RL</span>
-        <span><b data-cn>刘瑞彤</b><b data-en>Ruitong Liu</b><small data-cn>作品档案</small><small data-en>Portfolio</small></span>
+      <a class="brand" href="#top" aria-label="刘瑞彤作品集">
+        <span class="brand-mark">RL</span>
+        <span class="brand-text">
+          <b data-cn>刘瑞彤</b><b data-en>Ruitong Liu</b>
+          <small data-cn>视觉制作作品集</small><small data-en>Visual Production Portfolio</small>
+        </span>
       </a>
       <div class="nav-links">
         <a href="#video" data-nav data-cn>视频</a><a href="#video" data-nav data-en>Video</a>
         <a href="#posters" data-nav data-cn>海报</a><a href="#posters" data-nav data-en>Posters</a>
-        <a href="#tools" data-nav data-cn>工具</a><a href="#tools" data-nav data-en>Tools</a>
-        <a href="#pets" data-nav data-cn>桌宠</a><a href="#pets" data-nav data-en>Pets</a>
-        <a href="#meshy" data-nav data-cn>3D实验</a><a href="#meshy" data-nav data-en>3D Lab</a>
+        <a href="#ip" data-nav data-cn>IP形象</a><a href="#ip" data-nav data-en>IP</a>
+        <a href="#lab" data-nav data-cn>工具实验</a><a href="#lab" data-nav data-en>Lab</a>
         <a href="#contact" data-nav data-cn>联系</a><a href="#contact" data-nav data-en>Contact</a>
       </div>
       <button class="lang" id="langBtn" type="button" aria-label="toggle language">EN</button>
@@ -27,125 +29,283 @@
   </nav>
 
   <main id="top">
-    <section class="hero section-full">
-      <div class="hero-inner page-grid">
+    <section class="hero section">
+      <div class="shell hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow" data-cn>个人作品档案</div><div class="eyebrow" data-en>Selected Portfolio</div>
-          <h1 data-cn><span>刘瑞彤</span><strong>AIGC 视觉制作</strong></h1>
-          <h1 data-en><span>Ruitong Liu</span><strong>AIGC Visual Production</strong></h1>
-          <p class="hero-lead" data-cn>短剧视频素材、海报与宣发视觉、本地工具原型，以及正在推进的 3D 桌宠实验。</p>
-          <p class="hero-lead" data-en>Short-drama video assets, campaign visuals, local tool prototypes, and an ongoing 3D desktop pet experiment.</p>
-          <p class="hero-sub" data-cn>这个页面不做完整项目复盘，只保留可以直接看的成品、片段和工作流线索。</p>
-          <p class="hero-sub" data-en>This page keeps the work visible: final visuals, preview clips, and practical workflow traces.</p>
+          <p class="kicker" data-cn>视觉制作作品集</p>
+          <p class="kicker" data-en>Visual Production Portfolio</p>
+          <h1 data-cn>刘瑞彤<br><span>AIGC 视觉制作作品集</span></h1>
+          <h1 data-en>Ruitong Liu<br><span>AIGC Visual Production Portfolio</span></h1>
+          <p class="hero-lead" data-cn>收录短剧视频素材、海报 KV、IP 形象和本地工具实验。页面只保留能直接看到的内容，重点看画面、镜头和视觉完成度。</p>
+          <p class="hero-lead" data-en>Selected short-drama clips, campaign visuals, IP design work, and local tool experiments — focused on the work itself, not a resume layout.</p>
           <div class="hero-actions">
-            <a class="btn dark" href="#video" data-cn>查看作品</a><a class="btn dark" href="#video" data-en>View Work</a>
-            <a class="btn light" href="assets/downloads/resume-cn.pdf" download data-cn>下载简历</a><a class="btn light" href="assets/downloads/resume-en.pdf" download data-en>Download CV</a>
-            <a class="btn link" href="mailto:m13126880852@163.com" data-cn>联系</a><a class="btn link" href="mailto:m13126880852@163.com" data-en>Contact</a>
+            <a class="btn btn-dark" href="#video" data-cn>查看作品</a><a class="btn btn-dark" href="#video" data-en>View Work</a>
+            <a class="btn btn-light" href="assets/downloads/resume-cn.pdf" download data-cn>下载中文简历</a>
+            <a class="btn btn-light" href="assets/downloads/resume-en.pdf" download data-en>Download CV</a>
+            <a class="btn btn-ghost" href="mailto:m13126880852@163.com" data-cn>联系我</a><a class="btn btn-ghost" href="mailto:m13126880852@163.com" data-en>Contact</a>
           </div>
         </div>
 
-        <div class="work-collage reveal" aria-label="作品拼贴">
-          <figure class="tile tile-a" data-depth="12"><img src="assets/images/posters/bloodbound-fire-wide.webp" alt="血色契约横版海报"><figcaption data-cn>《血色契约》海报</figcaption><figcaption data-en>Bloodbound poster</figcaption></figure>
-          <figure class="tile tile-b" data-depth="22"><img src="assets/images/posters/bloodbound-moon-vertical.webp" alt="血色契约竖版海报"><figcaption data-cn>竖版封面</figcaption><figcaption data-en>Vertical cover</figcaption></figure>
-          <figure class="tile tile-c" data-depth="18"><img src="assets/images/video-blood10-cover.jpg" alt="视频素材帧"><figcaption data-cn>视频素材帧</figcaption><figcaption data-en>Video frame</figcaption></figure>
-          <figure class="tile tile-d" data-depth="10"><img src="assets/images/tools/local-image-deduper.webp" alt="本地图片查重工具"><figcaption data-cn>本地图片查重</figcaption><figcaption data-en>Image dedupe</figcaption></figure>
-          <figure class="tile tile-e" data-depth="16"><img src="assets/images/pets/desktop-pet-showcase.webp" alt="桌宠展示"><figcaption data-cn>桌宠 Demo</figcaption><figcaption data-en>Desktop pet</figcaption></figure>
-          <figure class="tile tile-f" data-depth="14"><img src="assets/images/tools/hardware-glass.webp" alt="桌面监控组件"><figcaption data-cn>桌面监控组件</figcaption><figcaption data-en>Desktop widget</figcaption></figure>
+        <div class="hero-collage reveal" aria-label="作品拼贴">
+          <figure class="collage-item c1" data-depth="18">
+            <img src="assets/images/posters/bloodbound-fire-wide.webp" alt="血色契约海报">
+            <figcaption data-cn>《血色契约》海报视觉</figcaption><figcaption data-en>Bloodbound campaign visual</figcaption>
+          </figure>
+          <figure class="collage-item c2" data-depth="24">
+            <img src="assets/images/posters/bloodbound-moon-vertical.webp" alt="竖版海报">
+            <figcaption data-cn>竖版封面</figcaption><figcaption data-en>Vertical cover</figcaption>
+          </figure>
+          <figure class="collage-item c3" data-depth="14">
+            <img src="assets/images/video-blood10-cover.jpg" alt="视频素材">
+            <figcaption data-cn>视频素材帧</figcaption><figcaption data-en>Video frame</figcaption>
+          </figure>
+          <figure class="collage-item c4" data-depth="10">
+            <img src="assets/images/tools/local-image-deduper.webp" alt="本地图片查重工具">
+            <figcaption data-cn>本地图片查重</figcaption><figcaption data-en>Image deduper</figcaption>
+          </figure>
+          <figure class="collage-item c5" data-depth="12">
+            <img src="assets/images/ip/panda-thumb.webp" alt="熊猫IP">
+            <figcaption data-cn>熊猫 IP</figcaption><figcaption data-en>Panda IP</figcaption>
+          </figure>
+          <figure class="collage-item c6" data-depth="16">
+            <img src="assets/images/tools/hardware-glass.webp" alt="桌面监控组件">
+            <figcaption data-cn>桌面组件</figcaption><figcaption data-en>Desktop widget</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section id="video" class="section-pad">
-      <div class="section-shell">
-        <div class="section-title-row reveal">
-          <div><span class="label" data-cn>视频</span><span class="label" data-en>Video</span><h2 data-cn>视频素材与成片片段</h2><h2 data-en>Video Assets & Episode Clips</h2></div>
-          <p data-cn>两排六个展示位，先放安全预览版。画面优先看人物、关系感和短剧氛围。</p>
-          <p data-en>Six preview slots, focused on characters, mood, and usable short-drama shots.</p>
+    <section id="video" class="section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <h2 data-cn>视频作品</h2>
+            <h2 data-en>Video Work</h2>
+          </div>
+          <p data-cn>保留商业短剧片段，也放进一部分个人内容实验，方便直接看镜头、节奏和画面完成度。</p>
+          <p data-en>Commercial short-drama clips alongside selected personal motion pieces, focused on image quality, rhythm, and usable visual output.</p>
         </div>
+
         <div class="video-grid">
-          <article class="video-card reveal" data-video="assets/videos/desk-to-throne-preview.mp4"><button class="video-cover"><img src="assets/images/video-desk-cover.jpg" alt="从课桌到王座"><span>▶</span></button><div><h3 data-cn>《从课桌到王座》成片片段</h3><h3 data-en>Desk to Throne</h3><p data-cn>短剧片段，展示素材整合、节奏和结尾海报替换后的成片效果。</p><p data-en>Edited episode clip with material integration and ending poster replacement.</p></div></article>
-          <article class="video-card reveal" data-video="assets/videos/night-prison-17-preview.mp4"><button class="video-cover"><img src="assets/images/video-night17-cover.jpg" alt="夜囚她影 01"><span>▶</span></button><div><h3 data-cn>《夜囚她影》视频素材 01</h3><h3 data-en>Night Prison Her Shadow 01</h3><p data-cn>都市言情类短剧素材片段，偏人物情绪和场景氛围。</p><p data-en>Short-drama material focused on emotion and scene mood.</p></div></article>
-          <article class="video-card reveal" data-video="assets/videos/night-prison-21-preview.mp4"><button class="video-cover"><img src="assets/images/video-night21-cover.jpg" alt="夜囚她影 02"><span>▶</span></button><div><h3 data-cn>《夜囚她影》视频素材 02</h3><h3 data-en>Night Prison Her Shadow 02</h3><p data-cn>同一项目下的补充镜头，展示不同镜头气氛和素材可用性。</p><p data-en>Additional shot preview from the same project.</p></div></article>
-          <article class="video-card reveal" data-video="assets/videos/bloodbound-ep10-preview.mp4"><button class="video-cover"><img src="assets/images/video-blood10-cover.jpg" alt="血色契约 EP10"><span>▶</span></button><div><h3 data-cn>《血色契约》EP10</h3><h3 data-en>Bloodbound Vengeance EP10</h3><p data-cn>哥特吸血鬼题材片段，包含暗色场景、动作镜头和奇幻氛围。</p><p data-en>Gothic vampire preview with dark scenes and fantasy mood.</p></div></article>
-          <article class="video-card reveal" data-video="assets/videos/bloodbound-ep19-preview.mp4"><button class="video-cover"><img src="assets/images/video-blood19-cover.jpg" alt="血色契约 EP19"><span>▶</span></button><div><h3 data-cn>《血色契约》EP19</h3><h3 data-en>Bloodbound Vengeance EP19</h3><p data-cn>同一题材下的另一组视频素材，延续暗色氛围和角色关系。</p><p data-en>Another preview from the same project.</p></div></article>
-          <article class="video-card placeholder reveal"><div class="placeholder-box"><span data-cn>预留</span><span data-en>Reserved</span></div><div><h3 data-cn>更多素材</h3><h3 data-en>More Clips</h3><p data-cn>后续补充新的安全展示片段。</p><p data-en>More safe preview clips can be added later.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="posters" class="section-pad posters-section">
-      <div class="section-shell">
-        <div class="section-title-row reveal">
-          <div><span class="label" data-cn>海报</span><span class="label" data-en>Posters</span><h2 data-cn>海报与宣发视觉</h2><h2 data-en>Posters & Campaign Visuals</h2></div>
-          <p data-cn>不做裁切图墙，横版和竖版成组展示，方便看同一题材下的版式适配。</p>
-          <p data-en>Horizontal and vertical visuals are shown together to keep the layout adaptation clear.</p>
-        </div>
-        <div class="poster-showcase">
-          <article class="poster-row reveal">
-            <div class="poster-text"><span>01</span><h3 data-cn>月夜亲密关系主视觉</h3><h3 data-en>Moonlit Character Tension</h3><p data-cn>偏人物靠近、暗夜氛围和标题安全区的一组主视觉。</p><p data-en>A pair focused on character tension, night mood, and title-safe layout.</p></div>
-            <button class="poster-frame wide" data-full="assets/images/posters/bloodbound-moon-wide.webp"><img src="assets/images/posters/bloodbound-moon-wide.webp" alt="月夜横版"></button>
-            <button class="poster-frame tall" data-full="assets/images/posters/bloodbound-moon-vertical.webp"><img src="assets/images/posters/bloodbound-moon-vertical.webp" alt="月夜竖版"></button>
+          <article class="video-card reveal" data-video="assets/videos/desk-to-throne-preview.mp4">
+            <button class="video-cover"><img src="assets/images/video-desk-cover.jpg" alt="从课桌到王座"><span>▶</span></button>
+            <div class="card-copy">
+              <p class="meta" data-cn>商业项目</p><p class="meta" data-en>Commercial</p>
+              <h3 data-cn>《从课桌到王座》成片片段</h3><h3 data-en>Desk to Throne</h3>
+              <p data-cn>展示成片节奏、素材整合和结尾海报替换后的完成效果。</p><p data-en>Edited episode clip with pacing, integration, and ending poster replacement.</p>
+            </div>
           </article>
-          <article class="poster-row reveal reverse">
-            <div class="poster-text"><span>02</span><h3 data-cn>火焰城堡复仇主视觉</h3><h3 data-en>Burning Castle Visuals</h3><p data-cn>火焰、城堡和人物回望构成更强的复仇情绪。</p><p data-en>A stronger revenge mood built around fire, castle space, and character posture.</p></div>
-            <button class="poster-frame wide" data-full="assets/images/posters/bloodbound-fire-wide.webp"><img src="assets/images/posters/bloodbound-fire-wide.webp" alt="火焰横版"></button>
-            <button class="poster-frame tall" data-full="assets/images/posters/bloodbound-fire-vertical.webp"><img src="assets/images/posters/bloodbound-fire-vertical.webp" alt="火焰竖版"></button>
+
+          <article class="video-card reveal" data-video="assets/videos/night-prison-17-preview.mp4">
+            <button class="video-cover"><img src="assets/images/video-night17-cover.jpg" alt="夜囚她影 01"><span>▶</span></button>
+            <div class="card-copy">
+              <p class="meta" data-cn>商业项目</p><p class="meta" data-en>Commercial</p>
+              <h3 data-cn>《夜囚她影》视频素材 01</h3><h3 data-en>Night Prison Her Shadow 01</h3>
+              <p data-cn>偏人物情绪和场景氛围的一组短剧素材镜头。</p><p data-en>Character-driven drama material focused on mood and atmosphere.</p>
+            </div>
           </article>
-          <article class="poster-row reveal">
-            <div class="poster-text"><span>03</span><h3 data-cn>蓝调拱门角色视觉</h3><h3 data-en>Blue Gothic Character Visuals</h3><p data-cn>补充同一项目下的角色关系和横版 banner 视觉探索。</p><p data-en>Additional banner and cover exploration for the same visual world.</p></div>
-            <button class="poster-frame wide" data-full="assets/images/posters/bloodbound-banner.webp"><img src="assets/images/posters/bloodbound-banner.webp" alt="蓝调横版"></button>
-            <button class="poster-frame tall" data-full="assets/images/posters/bloodbound-cover.webp"><img src="assets/images/posters/bloodbound-cover.webp" alt="蓝调竖版"></button>
+
+          <article class="video-card reveal" data-video="assets/videos/night-prison-21-preview.mp4">
+            <button class="video-cover"><img src="assets/images/video-night21-cover.jpg" alt="夜囚她影 02"><span>▶</span></button>
+            <div class="card-copy">
+              <p class="meta" data-cn>商业项目</p><p class="meta" data-en>Commercial</p>
+              <h3 data-cn>《夜囚她影》视频素材 02</h3><h3 data-en>Night Prison Her Shadow 02</h3>
+              <p data-cn>补充展示另一组人物关系镜头和画面气氛。</p><p data-en>Additional character and mood shots from the same project.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-video="assets/videos/bloodbound-ep10-preview.mp4">
+            <button class="video-cover"><img src="assets/images/video-blood10-cover.jpg" alt="血色契约 EP10"><span>▶</span></button>
+            <div class="card-copy">
+              <p class="meta" data-cn>商业项目</p><p class="meta" data-en>Commercial</p>
+              <h3 data-cn>《血色契约》EP10</h3><h3 data-en>Bloodbound Vengeance EP10</h3>
+              <p data-cn>哥特吸血鬼题材片段，重点看暗色氛围和角色关系张力。</p><p data-en>Gothic vampire preview built around dark atmosphere and character tension.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-video="assets/videos/reels/reel-0118.mp4">
+            <button class="video-cover"><img src="assets/images/reels/reel-0118.jpg" alt="1月18日内容实验"><span>▶</span></button>
+            <div class="card-copy">
+              <p class="meta" data-cn>内容实验</p><p class="meta" data-en>Personal Reel</p>
+              <h3 data-cn>《1月18日》视觉短片</h3><h3 data-en>Jan 18 Visual Reel</h3>
+              <p data-cn>偏空间叙事和奇观感的个人内容片段，用来展示画面世界观和镜头气质。</p><p data-en>A personal motion piece built around spatial storytelling and spectacle.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-video="assets/videos/reels/reel-0412.mp4">
+            <button class="video-cover"><img src="assets/images/reels/reel-0412.jpg" alt="4月12日内容实验"><span>▶</span></button>
+            <div class="card-copy">
+              <p class="meta" data-cn>内容实验</p><p class="meta" data-en>Personal Reel</p>
+              <h3 data-cn>《4月12日》猫与空间短片</h3><h3 data-en>Apr 12 Cat Motion Piece</h3>
+              <p data-cn>更偏轻概念和生活幻想感的一条短视频内容实验。</p><p data-en>A lighter concept piece mixing domestic space and surreal motion.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-video="assets/videos/reels/reel-zaowu.mp4">
+            <button class="video-cover"><img src="assets/images/reels/reel-zaowu.jpg" alt="造物"><span>▶</span></button>
+            <div class="card-copy">
+              <p class="meta" data-cn>内容实验</p><p class="meta" data-en>Personal Reel</p>
+              <h3 data-cn>《造物》概念短片</h3><h3 data-en>Creation Concept Reel</h3>
+              <p data-cn>偏未来感、晶体感和高光氛围的一组概念视觉片段。</p><p data-en>Concept visuals driven by crystalline forms, light, and future-facing imagery.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal" data-video="assets/videos/reels/reel-beast.mp4">
+            <button class="video-cover"><img src="assets/images/reels/reel-beast.jpg" alt="巨兽下"><span>▶</span></button>
+            <div class="card-copy">
+              <p class="meta" data-cn>内容实验</p><p class="meta" data-en>Personal Reel</p>
+              <h3 data-cn>《巨兽》概念短片</h3><h3 data-en>Colossus Concept Reel</h3>
+              <p data-cn>更偏史诗尺度和情绪场面的一条概念型视频实验。</p><p data-en>An epic-scale concept piece centered on mood, scale, and dramatic imagery.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="tools" class="section-pad tools-section">
-      <div class="section-shell">
-        <div class="section-title-row reveal">
-          <div><span class="label" data-cn>工具</span><span class="label" data-en>Tools</span><h2 data-cn>本地工具原型</h2><h2 data-en>Local Tool Prototypes</h2></div>
-          <p data-cn>这里保留工具的用途和界面，不做工程包装；除简历外暂不开放下载入口。</p>
-          <p data-en>Tool previews are shown as workflow prototypes. Downloads are closed except resumes.</p>
+    <section id="posters" class="section section-soft">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <h2 data-cn>海报与宣发视觉</h2>
+            <h2 data-en>Posters & Campaign Visuals</h2>
+          </div>
+          <p data-cn>以完整视觉展示为主。横版主视觉、竖版封面和补充版式成组出现，方便直接看同一项目下的视觉适配。</p>
+          <p data-en>Shown as complete visuals: wides, vertical covers, and supporting layouts grouped together for easy comparison.</p>
         </div>
-        <div class="tool-layout">
-          <article class="tool-card reveal"><img src="assets/images/tools/local-image-deduper.webp" alt="本地图片查重工具"><div><h3 data-cn>本地图片查重工具</h3><h3 data-en>Local Image Deduper</h3><p data-cn>面向 AIGC 批量素材整理的本地工具原型，覆盖重复图检测、相似图筛选和项目归档前的初步清理。</p><p data-en>A local prototype for AIGC asset sorting, duplicate detection, and early-stage cleanup.</p><div class="chip-row"><span>SHA256</span><span>dHash</span><span>CSV</span></div></div></article>
-          <article class="tool-card reveal"><img src="assets/images/tools/hardware-glass.webp" alt="Hardware Glass"><div><h3 data-cn>Hardware Glass 桌面监控组件</h3><h3 data-en>Hardware Glass</h3><p data-cn>轻量桌面悬浮组件，用于在剪辑、游戏和 AI 工具运行场景中查看 CPU、GPU 与内存状态。</p><p data-en>A lightweight floating desktop widget for CPU, GPU, and memory status.</p><div class="chip-row"><span>Windows</span><span>悬浮窗口</span><span>Prototype</span></div></div></article>
+
+        <div class="poster-stack">
+          <article class="poster-block reveal">
+            <div class="poster-copy">
+              <p class="meta" data-cn>《血色契约》 / 组一</p><p class="meta" data-en>Bloodbound / Set 01</p>
+              <h3 data-cn>月夜关系主视觉</h3><h3 data-en>Moonlit Character Visuals</h3>
+              <p data-cn>这一组更靠近人物关系和情绪张力，适合直接看人物靠近、月夜氛围和标题安全区的处理。</p><p data-en>A pair focused on character tension, close emotional framing, and the title-safe zone.</p>
+            </div>
+            <div class="poster-pair">
+              <button class="poster-frame wide" data-full="assets/images/posters/bloodbound-moon-wide.webp"><img src="assets/images/posters/bloodbound-moon-wide.webp" alt="月夜横版海报"></button>
+              <button class="poster-frame tall" data-full="assets/images/posters/bloodbound-moon-vertical.webp"><img src="assets/images/posters/bloodbound-moon-vertical.webp" alt="月夜竖版海报"></button>
+            </div>
+          </article>
+
+          <article class="poster-block reveal reverse">
+            <div class="poster-copy">
+              <p class="meta" data-cn>《血色契约》 / 组二</p><p class="meta" data-en>Bloodbound / Set 02</p>
+              <h3 data-cn>火焰城堡复仇主视觉</h3><h3 data-en>Burning Castle Visuals</h3>
+              <p data-cn>这一组以火焰、城堡和人物回望构成更强的戏剧感，适合看不同版式下的气氛统一。</p><p data-en>This set leans into fire, castle architecture, and dramatic revenge energy across formats.</p>
+            </div>
+            <div class="poster-pair">
+              <button class="poster-frame wide" data-full="assets/images/posters/bloodbound-fire-wide.webp"><img src="assets/images/posters/bloodbound-fire-wide.webp" alt="火焰横版海报"></button>
+              <button class="poster-frame tall" data-full="assets/images/posters/bloodbound-fire-vertical.webp"><img src="assets/images/posters/bloodbound-fire-vertical.webp" alt="火焰竖版海报"></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="poster-extra reveal">
+          <div class="poster-extra-copy">
+            <p class="meta" data-cn>补充视觉</p><p class="meta" data-en>Additional Visuals</p>
+            <h3 data-cn>同项目下的补充版式探索</h3><h3 data-en>Additional Layout Exploration</h3>
+            <p data-cn>保留一组横版 banner、竖版封面和角色主视觉，直接展示同一项目下的延展性。</p><p data-en>A smaller set showing banner, cover, and character-led variations within the same project world.</p>
+          </div>
+          <div class="poster-mini-grid">
+            <button class="poster-frame mini" data-full="assets/images/posters/bloodbound-banner.webp"><img src="assets/images/posters/bloodbound-banner.webp" alt="蓝调横版"></button>
+            <button class="poster-frame mini" data-full="assets/images/posters/bloodbound-cover.webp"><img src="assets/images/posters/bloodbound-cover.webp" alt="蓝调竖版"></button>
+            <button class="poster-frame mini" data-full="assets/images/posters/bloodbound-fire-wide.webp"><img src="assets/images/posters/bloodbound-fire-wide.webp" alt="补充海报"></button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="pets" class="section-pad pets-section">
-      <div class="section-shell pet-shell">
-        <div class="pet-copy reveal">
-          <span class="label" data-cn>桌宠</span><span class="label" data-en>Pets</span>
-          <h2 data-cn>桌宠与互动 Demo</h2><h2 data-en>Desktop Pet Demos</h2>
-          <p data-cn>基于角色精灵图和动作配置文件制作的 Windows 桌宠 Demo。展示重点放在角色素材、动作表和本地互动效果。</p>
-          <p data-en>Windows desktop pet demos built from sprite sheets and action configs, focused on character assets and local interaction.</p>
-          <div class="chip-row"><span>拖拽</span><span>动作切换</span><span>右键菜单</span><span>EXE Demo</span></div>
+    <section id="ip" class="section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <h2 data-cn>IP 形象与产品视觉</h2>
+            <h2 data-en>IP Character & Product Visuals</h2>
+          </div>
+          <p data-cn>以熊猫 IP 为例，保留角色形象、透明底资产和应用场景图。既能看单体角色，也能看它在产品里的使用方式。</p>
+          <p data-en>The panda IP section shows character assets, transparent cutouts, and product-use visuals in one place.</p>
         </div>
-        <div class="pet-visual reveal">
-          <img class="pet-main" src="assets/images/pets/desktop-pet-showcase.webp" alt="桌宠展示图">
-          <div class="pet-mini"><img src="assets/images/pets/blocky-pig.webp" alt="方块小猪"><img src="assets/images/pets/sapphire-siamese.webp" alt="暹罗猫"></div>
+
+        <div class="ip-layout">
+          <button class="ip-hero reveal" data-full="assets/images/ip/panda-ip-showcase.webp"><img src="assets/images/ip/panda-ip-showcase.webp" alt="熊猫IP展示板"></button>
+          <div class="ip-grid">
+            <button class="ip-card reveal" data-full="assets/images/ip/panda-cockpit.webp"><img src="assets/images/ip/panda-cockpit.webp" alt="熊猫驾驶场景"></button>
+            <button class="ip-card reveal" data-full="assets/images/ip/panda-chair.webp"><img src="assets/images/ip/panda-chair.webp" alt="熊猫坐姿"></button>
+            <button class="ip-card reveal" data-full="assets/images/ip/panda-chip.webp"><img src="assets/images/ip/panda-chip.webp" alt="熊猫芯片"></button>
+            <button class="ip-card reveal" data-full="assets/images/ip/panda-files.webp"><img src="assets/images/ip/panda-files.webp" alt="熊猫文件"></button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="meshy" class="section-pad meshy-section">
-      <div class="section-shell split-shell">
-        <div class="reveal"><span class="label">Meshy</span><h2 data-cn>3D 桌宠实验</h2><h2 data-en>3D Desktop Pet Experiment</h2><p data-cn>面向 AI 3D 资产落地的实验项目，尝试将 Meshy 生成的模型经过 Blender 检查与 Godot 接入，推进到可互动桌面 Demo。</p><p data-en>An ongoing experiment to move Meshy-generated 3D assets through Blender inspection and Godot integration into an interactive desktop demo.</p></div>
-        <div class="workflow-line reveal"><div><b>Meshy</b><span data-cn>生成模型</span><span data-en>Model generation</span></div><div><b>Blender</b><span data-cn>检查贴图、比例和文件</span><span data-en>Inspect materials, scale, and files</span></div><div><b>Godot</b><span data-cn>接入互动 Demo</span><span data-en>Prototype desktop interaction</span></div></div>
+    <section id="lab" class="section section-soft">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <h2 data-cn>工具与实验</h2>
+            <h2 data-en>Tools & Experiments</h2>
+          </div>
+          <p data-cn>这一部分只展示界面和方向，不开放额外下载。重点放在它们解决了什么问题，以及画面长什么样。</p>
+          <p data-en>Shown as practical experiments rather than download-heavy products — focused on what each piece solves and how it looks.</p>
+        </div>
+
+        <div class="lab-grid">
+          <article class="lab-card reveal">
+            <img src="assets/images/tools/local-image-deduper.webp" alt="本地图片查重工具">
+            <div class="lab-copy">
+              <p class="meta" data-cn>本地工具</p><p class="meta" data-en>Local Tool</p>
+              <h3 data-cn>本地图片查重工具</h3><h3 data-en>Local Image Deduper</h3>
+              <p data-cn>服务 AIGC 批量素材整理。保留重复图检测、相似图筛选和导出结果这些最实用的能力。</p><p data-en>A local utility for AIGC asset cleanup, focused on duplicate detection and similarity filtering.</p>
+              <div class="chip-row"><span>SHA256</span><span>dHash</span><span>CSV</span></div>
+            </div>
+          </article>
+
+          <article class="lab-card reveal">
+            <img src="assets/images/tools/hardware-glass.webp" alt="桌面监控组件">
+            <div class="lab-copy">
+              <p class="meta" data-cn>桌面组件</p><p class="meta" data-en>Desktop Widget</p>
+              <h3 data-cn>Hardware Glass</h3><h3 data-en>Hardware Glass</h3>
+              <p data-cn>轻量桌面悬浮组件，用来在剪辑、游戏或 AI 工具运行时快速看 CPU、GPU 和内存状态。</p><p data-en>A lightweight floating widget for CPU, GPU, and memory monitoring while working or gaming.</p>
+              <div class="chip-row"><span>Windows</span><span>悬浮</span><span>Prototype</span></div>
+            </div>
+          </article>
+
+          <article class="lab-card reveal">
+            <img src="assets/images/pets/desktop-pet-showcase.webp" alt="桌宠与3D实验">
+            <div class="lab-copy">
+              <p class="meta" data-cn>桌宠实验</p><p class="meta" data-en>Desktop Pet Lab</p>
+              <h3 data-cn>桌宠 Demo 与 3D 落地实验</h3><h3 data-en>Desktop Pet & 3D Pipeline</h3>
+              <p data-cn>展示像素桌宠、暹罗猫桌宠，以及从 Meshy 到 Blender 再到 Godot 的 3D 桌宠落地尝试。</p><p data-en>Includes 2D pet demos and an ongoing 3D desktop pet pipeline from Meshy to Blender to Godot.</p>
+              <div class="chip-row"><span>EXE Demo</span><span>Sprite</span><span>Meshy → Blender → Godot</span></div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section-pad contact-section">
-      <div class="section-shell contact-shell reveal">
-        <div><span class="label" data-cn>联系</span><span class="label" data-en>Contact</span><h2 data-cn>简历与联系</h2><h2 data-en>Resume & Contact</h2><p data-cn>当前站点用于展示可公开的作品片段。完整项目、原始文件和大文件下载入口暂不开放。</p><p data-en>This site shows public-safe previews. Full projects, source files, and large downloads are not public.</p></div>
-        <div class="contact-actions"><a class="btn dark" href="assets/downloads/resume-cn.pdf" download data-cn>下载中文简历</a><a class="btn dark" href="assets/downloads/resume-en.pdf" download data-en>Download English CV</a><a class="btn light" href="mailto:m13126880852@163.com">m13126880852@163.com</a></div>
+    <section id="contact" class="section">
+      <div class="shell">
+        <div class="contact-card reveal">
+          <div>
+            <h2 data-cn>联系与简历</h2>
+            <h2 data-en>Contact & Resume</h2>
+            <p data-cn>站内保留的是公开可展示的安全预览。简历可以直接下载，其他下载入口暂时关闭。</p>
+            <p data-en>This site keeps only public-safe previews. Resume downloads stay open; other downloads remain closed for now.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-dark" href="assets/downloads/resume-cn.pdf" download data-cn>下载中文简历</a>
+            <a class="btn btn-dark" href="assets/downloads/resume-en.pdf" download data-en>Download CV</a>
+            <a class="btn btn-light" href="mailto:m13126880852@163.com">m13126880852@163.com</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <div class="modal" id="modal" aria-hidden="true"><button class="modal-close" id="modalClose">×</button><div class="modal-inner" id="modalInner"></div></div>
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="close">×</button>
+    <div class="modal-inner" id="modalInner"></div>
+  </div>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
