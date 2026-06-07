@@ -64,11 +64,15 @@
     modalInner.appendChild(node);
     modal.classList.add('open');
     modal.setAttribute('aria-hidden','false');
+    document.body.classList.add('modal-lock');
   }
   function closeModal(){
+    const playing = modalInner.querySelector('video');
+    if(playing){ playing.pause(); playing.removeAttribute('src'); playing.load(); }
     modal.classList.remove('open');
     modal.setAttribute('aria-hidden','true');
     modalInner.innerHTML = '';
+    document.body.classList.remove('modal-lock');
   }
   modalClose && modalClose.addEventListener('click', closeModal);
   modal && modal.addEventListener('click', e => { if(e.target === modal) closeModal(); });
@@ -90,6 +94,8 @@
       video.controls = true;
       video.autoplay = true;
       video.playsInline = true;
+      video.preload = 'metadata';
+      video.controlsList = 'nodownload';
       video.style.background = '#111';
       openModal(video);
     });
